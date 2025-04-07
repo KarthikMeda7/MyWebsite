@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Karthik Meda</title>
+    <link rel="stylesheet" href="/projetct1/css/style.css">
+    <script src="https://kit.fontawesome.com/9520119986.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="../assets/logo.png" alt="" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Cirtificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Karthik</span> <br> from India</h1>
+            </div>
+        </div>
+    </header>
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/projetct1/assets/laptopme.png" alt="" class="cirtificates">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis temporibus voluptates optio, natus,
+                        aliquam alias eligendi hic nulla iure nam totam et exercitationem reprehenderit dicta tempora
+                        quasi, assumenda eum dolorum autem provident numquam magnam ut dolores! Inventore quas dolor
+                        rerum vitae reiciendis, tenetur explicabo harum ex dolore alias sit quaerat quidem molestias.
+                        Laudantium nobis voluptatem tempore dolor natus eaque amet non numquam, similique provident
+                        autem officia dolores soluta, sequi dolorem, nemo nam earum iste tenetur praesentium
+                        exercitationem deserunt. Non molestiae ratione eveniet iste aut, nemo a esse ipsum consequuntur
+                        tempore optio alias quibusdam ab maiores saepe autem beatae omnis possimus!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Dev</span><br>Designing dynamic web sites/apps</li>
+                            <li><span>UI?Ux</span><br>Designing web interfaces</li>
+                            <li><span>Database designer</span><br>Designing databases</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2024</span><br>Graduation in B.com(Computer Apllications) in Sathupalli with
+                                7.56 CGPA</li>
+                            <li><span>2017-2019</span><br>M.P.C in Intermediate in Hyderabad with 841 marks</li>
+                            <li><span>2016-2017</span><br>High School in Hyderabad with 8.3 CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2 class="">Web Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid molestiae vel eveniet inventore
+                        ex a odit consequatur tempora, cumque recusandae adipisci porro eius facere voluptate?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2 class="">UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid molestiae vel eveniet inventore
+                        ex a odit consequatur tempora, cumque recusandae adipisci porro eius facere voluptate?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-table-columns"></i>
+                    <h2 class="">Dashboard Creation</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid molestiae vel eveniet inventore
+                        ex a odit consequatur tempora, cumque recusandae adipisci porro eius facere voluptate?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Port folio Section -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="../assets/Work1.png" alt="">
+                    <div class="layer">
+                        <h3>Hotel Management System</h3>
+                        <p>A simple yet functional web-based Hotel Management System designed to manage food orders,
+                            track selected items, and calculate the total bill dynamically in real time. <br><br>
+                            Frontend: Streamlit components (tables, dropdowns, buttons, markdowns) <br>
+                            Backend: Python (for logic, data handling, and session state) <br>              
+                            UI Styling: Streamlit's built-in theming + custom markdown styling</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../assets/amazone.png" alt="">
+                    <div class="layer">
+                        <h3>Amazone Movies Analysis</h3>
+                        <p>This interactive dashboard presents a comprehensive analysis of Amazon Prime Video’s content
+                            catalog from 1920 to 2021, offering insights into show distribution by genre, rating,
+                            country, and release year. <br><br>
+                            Purpose:
+                            To analyze viewing trends, audience targeting through ratings, and global content
+                            distribution — enabling data-driven decision-making for content strategy.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- Certificates -->
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">Certificates</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="../assets/Responsive WebPage.jpg" alt="">
+                    <div class="layer">
+                        <h3>Responsive Web Designer</h3>
+                        <p>I have completed a certified course on building responsive websites using Bootstrap and
+                            Flexbox. This helped me gain hands-on experience in creating modern, mobile-friendly web
+                            designs.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../assets/Python.jpg" alt="">
+                    <div class="layer">
+                        <h3>Certified in Programming Foundations with Python</h3>
+                        <p>"Certified in Programming Foundations with Python by NxtWave, showcasing strong fundamentals
+                            in Python programming."</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../assets/SQL.jpg" alt="">
+                    <div class="layer">
+                        <h3>Certified in Introduction to Databases (SQL)</h3>
+                        <p>Awarded by NxtWave on December 22, 2024, demonstrating foundational knowledge of relational
+                            databases and SQL operations.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> karthikmeda7@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> 8143738728</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/power_star277/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/KarthikMeda7"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/karthik-meda-230674325/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" id="formId">
+                        <input type="text" name="Name" id="" placeholder="Your Name">
+                        <input type="email" name="Email" id="" placeholder="Your email">
+                        <textarea name="Message" id="" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright @ Karthik. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwLp-HRHKW2SC9R4v8AxqJXDfIq8RQKAx1QplUZ-DxYv7Z0vH3pKQisF7XGOBU4Jwyn/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
